@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<hmtl>
+<head>
+	<title>Midterms</title>
+	<link rel="stylesheet" href ="style.css">
+</head>
+<body>	
+<div class ="wrap">
+	<h1>Sign Up Here</h1>
+	<form>
+		<input type="text" placeholder ="First Name..." required>
+		<input type="text" placeholder ="Last Name..." required>
+		<input type="text" placeholder ="Email..." required>
+		<input type="text" placeholder ="User Name..." required>
+		<input type="password" value="Password" id="myInput">
+		<input type="checkbox" onclick="myFunction()">Show Password
+		<input type="submit" value="Submit">
+		
+		<script>
+			function myFunction() {
+			  var x = document.getElementById("myInput");
+			  if (x.type === "password") {
+			    x.type = "text";
+			  } else {
+			    x.type = "password";
+			  }
+			}			
+		</script>
+	</form> 
+</div>
+</body>
+</html>
